@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".allPersons"
+    android:background="@drawable/freindshiplife">
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listall"
+        android:layout_below="@+id/btnrefresh"
+        android:scrollbarStyle="insideOverlay"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp">
+    </ListView>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="listall"
+        android:text="Load"
+        android:textSize="35dp"
+        android:id="@+id/btnrefresh"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@android:color/transparent"/>
+
+</RelativeLayout>

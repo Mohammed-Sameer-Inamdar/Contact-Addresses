@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.contactinformation.MainActivity"
+    android:weightSum="3"
+    android:background="@drawable/friendsh">
+
+
+        <EditText
+            android:id="@+id/personNAME"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:hint="Name"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/personCONTACT"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:hint="Contact"
+            android:inputType="number"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/personADDRESS"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:hint="Adress"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"/>
+
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="120dp"
+            android:layout_marginStart="80dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:onClick="addPerson"
+            android:text="ADD"
+            android:textColor="@color/clorLightGree"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp">
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:hint="Enter name to delet"
+                android:id="@+id/deletname"
+                android:textStyle="bold"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"/>
+            <Button
+                android:id="@+id/deletButton"
+                android:onClick="deletperson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DELET"
+                android:layout_marginStart="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorRed"
+                android:backgroundTint="@android:color/widget_edittext_dark"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp">
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:hint="Enter name to update address"
+            android:id="@+id/name"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:hint="Enter adress"
+                android:id="@+id/addAdress"
+                android:textStyle="bold"
+                android:textColor="@color/clorLightGree"
+                android:textColorHint="@color/clorLightGree"/>
+            <Button
+                android:id="@+id/updateButton"
+                android:onClick="update"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="Update"
+                android:layout_marginStart="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorPink"
+                android:backgroundTint="@android:color/widget_edittext_dark"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/contacButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load your contacts"
+        android:onClick="load"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/transparent"
+        android:textStyle="bold"
+        android:textColor="@color/clorLightGree"
+        android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/viewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="View All Friends"
+            android:onClick="viewdata"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@android:color/transparent"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="30dp"/>
+
+</LinearLayout>
